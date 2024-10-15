@@ -1,6 +1,5 @@
 backend/.env
-backend/node_modules
-backend/.prettier*
+backend/venv
 
 frontend/.env
 frontend/node_modules
