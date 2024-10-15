@@ -8,12 +8,12 @@ Below are the instructions to setup TickOff locally.
 
 ## Prerequisites
 
-Node.js and NPM must be installed on the system.
+Node.js, NPM and Python3 must be installed on the system.
 
 ## Cloning the Repository
 
 ```bash
-git clone https://github.com/anuragpsarmah/TickOff.git
+git clone https://github.com/Hemangshu-Dey/TickOff.git
 cd TickOff
 ```
 
@@ -28,6 +28,11 @@ cd TickOff
     
  - Create an account at MongoDB setup the key. `JWT_KEY` can be any secret or randomly generated key. `FRONTEND_URL` should contain the link of the hosted frontend or otherwise left empty.
 
+ - Set up a virtual environment and make necessary package installations.
+      `python -m venv venv`,
+      `venv\Scripts\activate`,
+      `pip install -r requirements.txt`
+
 **Frontend Environment File**: Navigate to the frontend folder and create `.env` file. Add the following content to the file:
 
     VITE_BACKEND=
@@ -39,8 +44,7 @@ cd TickOff
 **Backend:**
 
   - Navigate to the backend directory.
-  - Install dependencies: `npm install`.
-  - Start the application: `npm run dev`.
+  - Start the application: `python src/app.py`.
 
 **Frontend:**
 
